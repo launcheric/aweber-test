@@ -1,5 +1,7 @@
 require_relative 'boot'
-
+require File.expand_path('../boot', __FILE__)
+require 'aweber'
+require 'rails/all'
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -27,5 +29,10 @@ module AweberTest
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.middleware.use OmniAuth::Builder do
+      provider :developer
+    end
+
   end
 end

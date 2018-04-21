@@ -243,7 +243,7 @@ DEPENDENCIES
   valid_attribute
   web-console (>= 3.3.0)
   webpacker (~> 3.3)
-  yarn (~> 0.1.1)
+  yarn
 
 BUNDLED WITH
    1.16.1

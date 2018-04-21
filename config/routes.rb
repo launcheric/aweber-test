@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   get 'session/create'
 
   get 'session/destroy'
+  get 'auth/aweber', :as => 'aweber_auth'
+  match 'auth/:aweber/callback' => 'session#create', :via => [:get, :post]
 
-  get 'auth/developer', :as => 'developer_auth'
-  match 'auth/:provider/callback' => 'session#create', :via => [:get, :post]
+  # get 'auth/developer', :as => 'developer_auth'
+  # match 'auth/:provider/callback' => 'session#create', :via => [:get, :post]
 
 end

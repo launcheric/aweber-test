@@ -10,6 +10,7 @@ class ArticleIndexContainer extends Component {
   }
 
   componentDidMount() {
+    debugger
     this.setState({
       articles: [
         {
@@ -34,14 +35,14 @@ class ArticleIndexContainer extends Component {
     })
   }
 
-  // componentWillMount() {
-  //   fetch(`api/v1/causes/${causeId}/articles`)
-  // }
+  componentWillMount() {
+    fetch(`api/v1/causes/${causeId}/articles`)
+  }
 
   render() {
     let active;
     let count = 0;
-    let articles = this.state.articles.map(article => {
+    let articles = this.props.articles.map(article => {
       if(count < 1) {
         active = 'active';
       } else {

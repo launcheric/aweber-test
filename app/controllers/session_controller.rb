@@ -3,7 +3,7 @@ class SessionController < ApplicationController
 
   def create
     binding.pry
-    @oauth = AWeber::OAuth.new("Ak24mnAp7hXh10SVfN23ZrqS", "kmuhFDEkCZdOPD2EF0cH7Y329A6ucKhsbZYk5byt")
+    @oauth = AWeber::OAuth.new("AkohrnG4CYNjPSsX6e2WEiTY", "ErNeZdFQWViPjbM7hamRkszjfNEg9XhXPsuIjwOe")
 
 # Go to URL outputed by the following, authorize your account
 # and copy the verification code

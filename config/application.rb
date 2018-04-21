@@ -31,7 +31,7 @@ module AweberTest
     config.generators.system_tests = nil
 
     config.middleware.use OmniAuth::Builder do
-      provider :aweber, evn['consumer_key'], env['consumer_secret']
+      provider :developer
     end
 
   end

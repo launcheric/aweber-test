@@ -54,7 +54,7 @@ class ArticleIndexContainer extends Component {
           id={article.id}
           name={article.name}
           feedUrl={article.feedUrl}
-          imgUrl={article.imgUrl}
+          imgUrl={article.image_url}
           active={active}
         />
       )

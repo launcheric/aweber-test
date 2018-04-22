@@ -11,7 +11,31 @@ class CauseShowContainer extends Component {
       events: [],
       articles: []
     }
+    this.getUserSubscriber=this.getUserSubscriber.bind(this)
   }
+
+  getUserSubscriber(){
+    debugger
+    fetch(`http://localhost:8888/1.0/accounts/1245636/lists`, {
+      method: "GET",
+      credentials: 'same-origin'
+    })
+    .then (response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      debugger
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
 
   componentDidMount() {
     fetch(`/api/v1/causes/${this.props.params.id}`, {
@@ -28,7 +52,6 @@ class CauseShowContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      debugger;
       let cause = body.cause
       let events = body.events
       let articles = body.articles
@@ -42,6 +65,7 @@ class CauseShowContainer extends Component {
   }
 
   render() {
+    let subscribers = this.getUserSubscriber();
     return (
       <div>
         {this.state.cause.details}

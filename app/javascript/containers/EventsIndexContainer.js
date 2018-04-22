@@ -9,35 +9,6 @@ class EventsIndexContainer extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   this.setState({
-  //     events: [
-  //       {
-  //         id: 1,
-  //         name: 'Event 1',
-  //         feedUrl: 'event1.com',
-  //         imgUrl: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi'
-  //       },
-  //       {
-  //         id: 2,
-  //         name: 'Event 2',
-  //         feedUrl: 'event2.com',
-  //         imgUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/hsdogdog-profile_image-5550ade194780dfc-300x300.jpeg'
-  //       },
-  //       {
-  //         id: 3,
-  //         name: 'Event 3',
-  //         feedUrl: 'event3.com',
-  //         imgUrl: 'http://luisjimenez.com/wp-content/uploads/2017/05/dog-1.jpg'
-  //       }
-  //     ]
-  //   })
-  // }
-
-  // componentWillMount() {
-  //   fetch(`api/v1/causes/${causeId}/articles`)
-  // }
-
   render() {
     let active;
     let count = 0;
@@ -54,7 +25,7 @@ class EventsIndexContainer extends Component {
           id={event.id}
           name={event.name}
           feedUrl={event.feedUrl}
-          imgUrl={event.imgUrl}
+          imgUrl={event.image_url}
           active={active}
         />
       )

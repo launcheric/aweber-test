@@ -9,35 +9,34 @@ class ArticleIndexContainer extends Component {
     }
   }
 
-  componentDidMount() {
-    debugger
-    this.setState({
-      articles: [
-        {
-          id: 1,
-          name: 'Article 1',
-          feedUrl: 'article1.com',
-          imgUrl: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi'
-        },
-        {
-          id: 2,
-          name: 'Article 2',
-          feedUrl: 'article2.com',
-          imgUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/hsdogdog-profile_image-5550ade194780dfc-300x300.jpeg'
-        },
-        {
-          id: 3,
-          name: 'Article 3',
-          feedUrl: 'article3.com',
-          imgUrl: 'http://luisjimenez.com/wp-content/uploads/2017/05/dog-1.jpg'
-        }
-      ]
-    })
-  }
+  // componentDidMount() {
+  //   this.setState({
+  //     articles: [
+  //       {
+  //         id: 1,
+  //         name: 'Article 1',
+  //         feedUrl: 'article1.com',
+  //         imgUrl: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi'
+  //       },
+  //       {
+  //         id: 2,
+  //         name: 'Article 2',
+  //         feedUrl: 'article2.com',
+  //         imgUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/hsdogdog-profile_image-5550ade194780dfc-300x300.jpeg'
+  //       },
+  //       {
+  //         id: 3,
+  //         name: 'Article 3',
+  //         feedUrl: 'article3.com',
+  //         imgUrl: 'http://luisjimenez.com/wp-content/uploads/2017/05/dog-1.jpg'
+  //       }
+  //     ]
+  //   })
+  // }
 
-  componentWillMount() {
-    fetch(`api/v1/causes/${causeId}/articles`)
-  }
+  // componentWillMount() {
+  //   fetch(`api/v1/causes/${causeId}/articles`)
+  // }
 
   render() {
     let active;

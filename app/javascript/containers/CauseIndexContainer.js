@@ -10,7 +10,7 @@ class CauseIndexContainer extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:3000/api/v1/causes`, {
+    fetch(`/api/v1/causes`, {
       credentials: 'same-origin'
     })
     .then (response => {
@@ -24,6 +24,7 @@ class CauseIndexContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
+      debugger;
       this.setState({causes: body})
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));

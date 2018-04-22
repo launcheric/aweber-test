@@ -14,7 +14,7 @@ class CauseShowContainer extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:3000/api/v1/causes/${this.props.params.id}`, {
+    fetch(`/api/v1/causes/${this.props.params.id}`, {
       credentials: 'same-origin'
     })
     .then (response => {
@@ -28,6 +28,7 @@ class CauseShowContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
+      debugger;
       let cause = body.cause
       let events = body.events
       let articles = body.articles

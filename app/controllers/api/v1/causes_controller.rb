@@ -6,6 +6,7 @@ class Api::V1::CausesController < ApplicationController
   end
 
   def show
+    binding.pry
    cause = Cause.find(params[:id])
    events = cause.events
    articles = cause.articles

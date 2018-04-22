@@ -10,8 +10,7 @@ import './App.css';
 const App = props => {
   return(
     <Router history={browserHistory}>
-      <Route path='/' component={HomeShowContainer} />
-      <Route path='/causes' component={CauseIndexContainer} />
+      <Route path='/' component={CauseIndexContainer} />
       <Route path='/causes/:id' component={CauseShowContainer} />
     </Router>
   )

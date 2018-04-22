@@ -11,9 +11,6 @@ class HomeShowContainer extends Component {
     }
   }
 
-  componentDidMount(){
-    debugger;
-  }
   render() {
     return (
       <div className="App">

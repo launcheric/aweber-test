@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let reactElement = document.getElementById('app')
   if (reactElement) {
     ReactDOM.render(
-      <App />
+      <App />,
+      reactElement
     );
     registerServiceWorker();
   }

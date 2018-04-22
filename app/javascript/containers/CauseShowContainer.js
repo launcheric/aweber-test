@@ -15,7 +15,6 @@ class CauseShowContainer extends Component {
   }
 
   getUserSubscriber(){
-    debugger
     fetch(`http://localhost:8888/1.0/accounts/1245636/lists`, {
       method: "GET",
       credentials: 'same-origin'

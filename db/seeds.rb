@@ -16,7 +16,7 @@ cause3 = Cause.create!(name:"Bike ride for dogs", description: "Ride for the cau
 
 event1 = Event.create!(name:"Rally for Puppies at the Park!", feed_url: "https://www.rallydogs.com/faq.cfm", cause_id: cause1.id, image_url: 'http://www.dogbazar.org/wp-content/uploads/2013/10/311-1024x682.jpg')
 event2 = Event.create!(name:"Donation drive event", feed_url: "https://www.google.com", cause_id: cause2.id, image_url: 'http://www.dippylisty.com/contentdippyimages/3494.jpg')
-event3 = Event.create!(name:"Bike event ", feed_url: "https://www.google.com", cause_id: cause3.id, image_url: 'http://www.misucell.com/data/out/9/IMG_360760.jpg')
+event3 = Event.create!(name:"Bike event ", feed_url: "https://www.google.com", cause_id: cause3.id, image_url: 'https://prettyfluffy.com/wp-content/uploads/2014/06/5-Tips-Dog-Look-at-Camera-TITLE.jpg')
 
 
 article1 = Article.create!(name:"Kale can be a puppy killer!", feed_url: "http://www.akc.org/expert-advice/nutrition/natural-foods/can-dogs-eat-kale/", cause_id: cause1.id, image_url: 'https://prettyfluffy.com/wp-content/uploads/2014/06/5-Tips-Dog-Look-at-Camera-TITLE.jpg')

@@ -20,4 +20,5 @@ namespace :api do
       end
     end
   end
+  resources :causes, to: "homes#index"
 end

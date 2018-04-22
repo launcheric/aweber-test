@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
       <App />,
       reactElement
-    )
+    );
+    registerServiceWorker();
   }
 })
